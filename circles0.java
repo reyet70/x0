@@ -2,12 +2,12 @@
 
 // Setup:  screen size. //
 void setup() {
-  size(200, 400);                // Try changing the width & height.
+  size(150, 500);                // Try changing the width & height.
 }
 
 // Next frame:  circle at (x,y). //
 void draw() {
-  ellipse( 60,50, 60,90 );       // Try changing the (x,y) and size.
+  ellipse( 30,20, 40,80 );       // Try changing the (x,y) and size.
   
-  text( "ho ho!" , 50, height -20);
+  text( "ho ho!" , 60, height -30);
 }
