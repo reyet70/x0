@@ -9,19 +9,19 @@ int h,w;
 
 // Setup:  screen size, initialization. //
 void setup() {
-  size(500, 500);
-  x=  width/2;
-  y=  height/2;
-  w=  80;          // width of ellipse.
-  h=  80;          // height of ellipse
+  size(250, 500);
+  x=  width/6;
+  y=  height/4;
+  w=  55;          // width of ellipse.
+  h=  45;          // height of ellipse
 }
 
 // Next frame. //
 void draw() {
-  text( title, 10, 10 );
-  text( subtitle, width/2, 10 );
-  text( author, 10, height-10 );
-  text( w+"x"+h, width/2,height-10 );
+  text( title, 30, 30 );
+  text( subtitle, width/6, 15 );
+  text( author, 20, height-20 );
+  text( w+"x"+h, width 25,height-25 );
   //
   ellipse(x, y, w, h);
 }
@@ -37,8 +37,8 @@ void mousePressed() {
 //  Handle keyboard //
 void keyPressed() {
   // Erase everything, change size & color. //
-  background( random(255), random(255), random(255) );
-  fill( random(255), random(255), random(255) );
-  w=  int( random(50,150) );
-  h=  int( random(50,150) );
+  background( random(155), random(100), random(155) );
+  fill( random(62), random(90), random(62) );
+  w=  int( random(60,120) );
+  h=  int( random(60,120) );
 }
